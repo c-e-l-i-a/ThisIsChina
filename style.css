@@ -592,6 +592,7 @@ footer {
 
   .contact_input_box{
     grid-template-columns: 1fr;
+    gap: 5px;
   }
 
   #message:nth-child(5) {
@@ -663,6 +664,10 @@ footer {
     font-size: 12rem;
   }
 
+  .tour_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
 
 
@@ -683,6 +688,23 @@ footer {
   .contact_input_box .field {
     font-size: 0.8rem;
   }
+
+  .footer_info {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer_info .info_col {
+    padding: 15px;
+  }
+
+  .info_col h5 {
+    font-size: 1rem;
+  }
+
+  .info_col p {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -693,6 +715,18 @@ footer {
 
   .header_text h1 span {
     font-size: 8rem;
+  }
+
+  .title_tour_container {
+    padding: 10px 0;
+
+  }
+  .title_tour_container h2 {
+    font-size: 2rem;
+  }
+
+  .title_tour_container h5 {
+    font-size: 1.3rem;
   }
 }
 
