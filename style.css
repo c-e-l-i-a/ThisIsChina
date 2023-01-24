@@ -120,6 +120,10 @@ nav ul li a {
     padding-bottom: 10px;
 }
 
+.about_us p {
+  text-align: justify;
+}
+
 .about_us_img {
     position: relative;
     width: 45%;
@@ -224,6 +228,10 @@ nav ul li a {
     width: 100%;
     height: 150px;
     margin-top: 3rem;
+}
+
+.box_content_review {
+  display: none;
 }
 
 .slider_review {
@@ -574,6 +582,50 @@ footer {
       width: 90%;
       margin: 0 auto;
     }
+
+    .about_container {
+      justify-content: flex-start;
+    }
+
+    .card_content {
+      justify-content: normal;
+      width: 100%;
+    }
+
+    .about_us {
+      width: 40%;
+      padding: 10px;
+    }
+
+    .about_us_img {
+      width: 60%;
+      position: initial;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .about_us_img #second_img {
+      position: initial;
+      height: 350px;
+    }
+
+    .about_us_img #first_img {
+      height: 350px;
+    }
+    
+    .slider_review {
+      margin: 0 auto;
+    }
+
+    .slider_review .quote {
+      font-size: 2.5rem;
+  }
+  
+  .slider_review .person {
+      font-size: 1rem;
+  }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -599,6 +651,29 @@ footer {
     grid-row-start: 5;
     grid-row-end: 5;
   }
+
+  .card_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about_us {
+    width: 90%;
+  }
+
+  .about_us_img {
+    width: 90%;
+    padding-top: 10px;
+  }
+
+  .about_us_img #second_img {
+    height: 300px;
+  }
+
+  .about_us_img #first_img {
+    height: 300px;
+  }
+
 
 }
 
@@ -668,6 +743,22 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .slider_review {
+    width: 500px;
+  }
+
+  .slider_review ul li {
+    width: 500px;
+  }
+
+  .slider_review .quote {
+    font-size: 2rem;
+}
+
+.slider_review .person {
+    font-size: 0.8rem;
+}
+
 }
 
 
@@ -705,6 +796,52 @@ footer {
   .info_col p {
     font-size: 0.8rem;
   }
+
+  .slider_review {
+    display: none;
+  }
+
+  .review_container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+
+  .box_content_review {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-content: center;
+    background-color:#323136;
+    border-radius: 16px;
+    padding: 10px 20px ;
+  }
+  
+  .box_review {
+    width: 80%;
+    padding-bottom: 5px;
+    justify-items: center;
+    text-align: start;
+    font-size: 0.9em;
+    color: var(--main-font-color);
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .about_us_img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_us_img #first_img {
+    width: 200px;
+    padding-bottom: 10px;
+  }
+
+  .about_us_img #second_img {
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -719,6 +856,7 @@ footer {
 
   .title_tour_container {
     padding: 10px 0;
+    margin-top: 2rem;
 
   }
   .title_tour_container h2 {
